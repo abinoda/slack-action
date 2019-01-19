@@ -33,7 +33,7 @@ To use this GitHub Action you'll first need to create a Slack App and install it
 
 ## Using the action
 
-To use this GitHub Action, you'll need to set a `SLACK_BOT_TOKEN` on GitHub. To get your Slack bot token, browse to the "OAuth & Permissions" page listed in Slack and copy the "Bot User OAuth Access Token" beginning in `xoxb-`.
+To use this GitHub Action, you'll need to set a `SLACK_BOT_TOKEN` secret on GitHub. To get your Slack bot token, browse to the "OAuth & Permissions" page listed in Slack and copy the "Bot User OAuth Access Token" beginning in `xoxb-`.
 
 ### Posting messages
 
