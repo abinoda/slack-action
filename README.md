@@ -2,7 +2,7 @@
 
 This action wraps the Slack [chat.postMessage](https://api.slack.com/methods/chat.postMessage) API method for posting to channels, private groups, and DMs.
 
-This action is designed to be used with [Slack bot tokens](https://api.slack.com/docs/token-types). Slack bots have two main advantages versus user tokens and incoming webhooks: (1) Bots can't be disabled inadvertently when a Slack user is disabled or removed. Slack has written about this in a [recent announcement](https://medium.com/slack-developer-blog/the-latest-with-app-tokens-fe878d44130c), and (2) Bots offer a [powerful range of capabilities](https://api.slack.com/bot-users) and can be extended to perform more functions.
+This action is designed to be used with [Slack bot tokens](https://api.slack.com/docs/token-types). Slack bots have two main advantages versus user tokens and incoming webhooks: (1) Bots can't be disabled inadvertently when a Slack user is disabled or removed. Slack has written about this in a [recent announcement](https://medium.com/slack-developer-blog/the-latest-with-app-tokens-fe878d44130c), and (2) Bots offer a [powerful range of capabilities](https://api.slack.com/bot-users) that can be leveraged to perform more functions.
 
 ## Usage:
 
