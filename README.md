@@ -67,10 +67,6 @@ You can also find channel IDs using the Slack API. Get a list of channels that y
 
 Please refer to [Slack's documentation](https://api.slack.com/docs/messages) on message formatting. They also have a [message builder](https://api.slack.com/docs/messages/builder) that's great for playing around and previewing messages. Your messages can contain attachments, markdown, buttons, and more.
 
-## Secrets
-
-* `SLACK_BOT_TOKEN` - **Required**. The Slack bot token to use for posting messages ([more info](https://api.slack.com/docs/token-types#bot))
-
 ## License
 
 The Dockerfile and associated scripts and documentation in this project are released under the [MIT License](LICENSE).
