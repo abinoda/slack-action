@@ -8,7 +8,7 @@ This action is designed to be used with [Slack bot tokens](https://api.slack.com
 
 ```workflow
 action "Post message to Slack" {
-  uses = "pullreminders/slack-github-action@master"
+  uses = "pullreminders/slack-action@master"
   secrets = [
     "SLACK_BOT_TOKEN",
   ]
