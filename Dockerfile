@@ -1,7 +1,7 @@
 FROM debian:9.6-slim
 
 LABEL "com.github.actions.name"="Post Slack message"
-LABEL "com.github.actions.description"="Post a message in Slack"
+LABEL "com.github.actions.description"="Post a message to Slack"
 LABEL "com.github.actions.icon"="hash"
 LABEL "com.github.actions.color"="gray-dark"
 
