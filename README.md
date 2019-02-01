@@ -1,4 +1,4 @@
-# GitHub Action for Slack
+# Post a message to Slack
 
 This action wraps the Slack [chat.postMessage](https://api.slack.com/methods/chat.postMessage) API method for posting to channels, private groups, and DMs.
 
