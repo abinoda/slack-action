@@ -5,13 +5,12 @@ This action wraps the Slack [chat.postMessage](https://api.slack.com/methods/cha
 ## Usage:
 
 ```workflow
-action "Post message to Slack" {
-  uses = "pullreminders/slack-action@master"
-  secrets = [
-    "SLACK_BOT_TOKEN",
-  ]
-  args = "{\"channel\":\"C1234567890\",\"text\":"Hello world"}"
-}
+- name: Notify slack
+  env:
+    SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+  uses: pullreminders/slack-action@master
+  with:
+    args: '{\"channel\":\"C1234567890\",\"text\":\"Hello world\"}'
 ```
 
 Here's what the Slack message would look like:
@@ -38,13 +37,12 @@ To use this GitHub Action, you'll need to set a `SLACK_BOT_TOKEN` secret on GitH
 Slack's [chat.postMessage](https://api.slack.com/methods/chat.postMessage) method accepts a JSON payload containing options — this JSON payload should be supplied as the argument in your GitHub Action. At a bare minimum, your payload must include a channel ID and the message. Here's what a basic message might look like:
 
 ```workflow
-action "Post message to Slack" {
-  uses = "pullreminders/slack-github-action@master"
-  secrets = [
-    "SLACK_BOT_TOKEN",
-  ]
-  args = "{\"channel\":\"C1234567890\",\"text\":"Hello world"}"
-}
+- name: Notify slack
+  env:
+    SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+  uses: pullreminders/slack-action@master
+  with:
+    args: '{\"channel\":\"C1234567890\",\"text\":\"Hello world\"}'
 ```
 
 Please note that if you are using the visual editor you should not escape quotes because GitHub will automatically escape them for you.
