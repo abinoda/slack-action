@@ -4,7 +4,7 @@ This action wraps the Slack [chat.postMessage](https://api.slack.com/methods/cha
 
 ## Usage:
 
-```workflow
+```yaml
 - name: Notify slack
   env:
     SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
@@ -36,7 +36,7 @@ To use this GitHub Action, you'll need to set a `SLACK_BOT_TOKEN` secret on GitH
 
 Slack's [chat.postMessage](https://api.slack.com/methods/chat.postMessage) method accepts a JSON payload containing options — this JSON payload should be supplied as the argument in your GitHub Action. At a bare minimum, your payload must include a channel ID and the message. Here's what a basic message might look like:
 
-```workflow
+```yaml
 - name: Notify slack
   env:
     SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
