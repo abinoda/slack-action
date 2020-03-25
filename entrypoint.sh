@@ -9,5 +9,5 @@ fi
 curl -X POST \
      -H "Content-type: application/json" \
      -H "Authorization: Bearer $SLACK_BOT_TOKEN" \
-     -d \'"$*"\' \
+     -d "$*" \
      https://slack.com/api/chat.postMessage
